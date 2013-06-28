@@ -6,8 +6,8 @@ $connection = $installer->getConnection();
 $installer->startSetup();
 
 $installer->run("
-DROP TABLE IF EXISTS `{$installer->getTable('improved_catalogsearch_fulltext')}`;
-CREATE TABLE `{$installer->getTable('improved_catalogsearch_fulltext')}` (
+DROP TABLE IF EXISTS `{$installer->getTable('ipcatalogsearch_fulltext')}`;
+CREATE TABLE `{$installer->getTable('ipcatalogsearch_fulltext')}` (
   `product_id` int(10) unsigned NOT NULL,
   `store_id` smallint(5) unsigned NOT NULL,
   `data_index` longtext NOT NULL,
