@@ -1,0 +1,95 @@
+<?xml version="1.0"?>
+
+<config>
+	<sections>
+		<catalog>
+			<groups>
+				<ipcatalogsearch translate="label" module="ipcatalogsearch">
+					<label>Catalog Search Weight</label>
+					<comment></comment>
+					<sort_order>1000</sort_order>
+					<show_in_default>1</show_in_default>
+					<show_in_website>1</show_in_website>
+					<show_in_store>1</show_in_store>
+					<fields>
+
+						<priority_attributes_1 translate="label comment">
+							<label>Prioritized Attributes</label>
+							<comment>Attributes that should be priotitized in searches</comment>
+							<frontend_type>multiselect</frontend_type>
+							<source_model>ipcatalogsearch/system_config_source_attributes_show</source_model>
+							<sort_order>10</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</priority_attributes_1>
+
+						<priority_weight_1 translate="label comment">
+							<label>Weight of prioritized attributes</label>
+							<comment>The weight of prioritized attributes</comment>
+							<frontend_type>text</frontend_type>
+							<sort_order>11</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</priority_weight_1>
+
+						<priority_attributes_2 translate="label comment">
+							<label>Prioritized Attributes</label>
+							<comment>Attributes that should be priotitized in searches</comment>
+							<frontend_type>multiselect</frontend_type>
+							<source_model>ipcatalogsearch/system_config_source_attributes_show</source_model>
+							<sort_order>20</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</priority_attributes_2>
+
+						<priority_weight_2 translate="label comment">
+							<label>Weight of prioritized attributes</label>
+							<comment>The weight of prioritized attributes</comment>
+							<frontend_type>text</frontend_type>
+							<sort_order>21</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</priority_weight_2>
+
+						<priority_attributes_3 translate="label comment">
+							<label>Prioritized Attributes</label>
+							<comment>Attributes that should be priotitized in searches</comment>
+							<frontend_type>multiselect</frontend_type>
+							<source_model>ipcatalogsearch/system_config_source_attributes_show</source_model>
+							<sort_order>30</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</priority_attributes_3>
+
+						<priority_weight_3 translate="label comment">
+							<label>Weight of prioritized attributes</label>
+							<comment>The weight of prioritized attributes</comment>
+							<frontend_type>text</frontend_type>
+							<sort_order>31</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</priority_weight_3>
+
+						<negate_relevance translate="label comment">
+							<label>Negate relevance</label>
+							<comment>It set, then relevances in fulltext searches will be negated</comment>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<sort_order>100</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</negate_relevance>
+
+					</fields>
+				</ipcatalogsearch>
+			</groups>
+		</catalog>
+	</sections>
+</config>

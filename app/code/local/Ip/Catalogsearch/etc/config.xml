@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<config>
+	<modules>
+		<Ip_Catalogsearch>
+			<version>0.2.0</version>
+		</Ip_Catalogsearch>
+	</modules>
+	<global>
+		<resources>
+			<ipcatalogsearch_setup>
+				<setup>
+					<module>Ip_Catalogsearch</module>
+					<class>Ip_Catalogsearch_Model_Mysql4_Setup</class>
+				</setup>
+				<connection>
+					<use>core_setup</use>
+				</connection>
+			</ipcatalogsearch_setup>
+		</resources>
+
+		<models>
+			<ipcatalogsearch>
+				<class>Ip_Catalogsearch_Model</class>
+				<resourceModel>ipcatalogsearch_mysql4</resourceModel>
+			</ipcatalogsearch>
+
+			<!-- Extend built-in fulltext search -->
+			<catalogsearch_mysql4>
+				<rewrite>
+					<fulltext>Ip_Catalogsearch_Model_Mysql4_Fulltext</fulltext>
+				</rewrite>
+
+			</catalogsearch_mysql4>
+
+			<ipcatalogsearch_mysql4>
+				<entities>
+					<fulltext>
+						<table>improved_catalogsearch_fulltext</table>
+					</fulltext>
+				</entities>
+			</ipcatalogsearch_mysql4>
+		</models>
+
+		<helpers>
+			<ipcatalogsearch>
+				<class>Ip_Catalogsearch_Helper</class>
+			</ipcatalogsearch>
+		</helpers>
+
+		<resources>
+			<ipcatalogsearch_write>
+				<connection>
+					<use>core_write</use>
+				</connection>
+			</ipcatalogsearch_write>
+			<ipcatalogsearch_read>
+				<connection>
+					<use>core_read</use>
+				</connection>
+			</ipcatalogsearch_read>
+		</resources>
+
+	</global>
+
+	<adminhtml>
+		<translate>
+			<modules>
+				<Ip_Catalogsearch>
+					<files>
+						<default>Ip_Catalogsearch.csv</default>
+					</files>
+				</Ip_Catalogsearch>
+			</modules>
+		</translate>
+	</adminhtml>
+</config>

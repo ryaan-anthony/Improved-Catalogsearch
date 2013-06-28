@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<config>
+	<modules>
+		<Ip_Catalogsearch>
+			<active>true</active>
+			<codePool>local</codePool>
+			<depends>
+				<Mage_CatalogSearch />
+			</depends>
+		</Ip_Catalogsearch>
+	</modules>
+</config>
