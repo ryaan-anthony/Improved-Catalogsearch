@@ -5,6 +5,7 @@ class Ip_Catalogsearch_Model_Mysql4_Fulltext extends Mage_CatalogSearch_Model_My
 	protected function _construct() 
 	{
 		$this->_init('ipcatalogsearch/fulltext', 'product_id');
+        $this->_engine = Mage::helper('catalogsearch')->getEngine();
 	}
 
 	/**
